@@ -1,3 +1,11 @@
+* {
+    margin-top: 0;
+}
+
+header {
+    grid-area: hed;
+}
+
 #HeroImage {
     width: 100%;
 }
@@ -13,16 +21,28 @@ nav {
     
 }
 
-main {
-    display: grid;
-    height: auto;
-    grid-template-columns: 70% 20%;
-    grid-template-areas: 
-    'po1 asi'
-    'po2 asi'
-    'po3'
-}
-
 #post1 {
     grid-area: po1;
+    background-color: lightblue;
+}
+
+#post2 {
+    grid-area: po2;
+    background-color: lightgreen;
+}
+
+aside {
+    grid-area: asi;
+    background-color: lightgray;
+}
+
+#gridIndex {
+    background-color: rgba(41,128,185,0.7);
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: auto;
+    grid-template-areas:
+        'hed hed' 
+        'po1 asi'
+        'po2 asi';
 }
