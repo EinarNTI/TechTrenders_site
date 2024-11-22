@@ -4,6 +4,7 @@
 
 header {
     grid-area: hed;
+    margin-bottom: 1em;
 }
 
 #HeroImage {
@@ -37,12 +38,14 @@ aside {
 }
 
 #gridIndex {
-    background-color: rgba(41,128,185,0.7);
+    background-color: rgba(41,128,185,0.8);
     display: grid;
     grid-template-columns: 70% 30%;
     height: auto;
     grid-template-areas:
         'hed hed' 
         'po1 asi'
-        'po2 asi';
+        'po2 asi'
+        'po3 asi'
+        'foo foo';
 }
