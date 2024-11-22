@@ -2,6 +2,12 @@
     margin-top: 0;
 }
 
+body {
+    margin-bottom: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 header {
     grid-area: hed;
     margin-bottom: 1em;
@@ -22,19 +28,35 @@ nav {
     
 }
 
+.articleImg {
+    width: 60%;
+}
+
+.post {
+    margin-bottom: 1em;
+    background-color: #2980b9;
+    border-top-left-radius:0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
 #post1 {
     grid-area: po1;
-    background-color: lightblue;
 }
 
 #post2 {
     grid-area: po2;
-    background-color: lightgreen;
+}
+
+#post3 {
+    grid-area: po3;
 }
 
 aside {
     grid-area: asi;
     background-color: lightgray;
+    margin-bottom: 1em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 }
 
 #gridIndex {
@@ -48,4 +70,11 @@ aside {
         'po2 asi'
         'po3 asi'
         'foo foo';
+}
+
+footer {
+    margin-top: 2em;
+    grid-area: foo;
+    background-color: #2980b9;
+    margin-bottom: 0%;
 }
