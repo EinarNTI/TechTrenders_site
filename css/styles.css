@@ -20,6 +20,8 @@ header {
 
 nav {
     background-color: #2980b9;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 }
 
 .navItem {
@@ -31,6 +33,10 @@ nav {
 
 .articleImg {
     width: 60%;
+}
+
+.borderText {
+    margin-left: 0.5em;
 }
 
 .post {
@@ -78,4 +84,6 @@ footer {
     grid-area: foo;
     background-color: #2980b9;
     margin-bottom: 0%;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
 }
