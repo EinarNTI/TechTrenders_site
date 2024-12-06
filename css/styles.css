@@ -6,11 +6,15 @@ body {
     margin-bottom: 0;
     margin-left: 1em;
     margin-right: 1em;
+    font-family: sans-serif;
 }
 
 header {
     grid-area: hed;
     margin-bottom: 1em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    box-shadow: 0 2px 2px 1px rgba(0,0,0,0.2);
 }
 
 #HeroImage {
@@ -28,22 +32,24 @@ nav {
     margin: 1em;
     color: black;
     text-decoration: none;
-    
+
 }
 
 .articleImg {
     width: 60%;
+    margin-left: 0.5em;
 }
 
-.borderText {
+.moveFromBorder {
     margin-left: 0.5em;
 }
 
 .post {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     background-color: #2980b9;
-    border-top-left-radius:0.5em;
+    border-top-left-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 #post1 {
@@ -56,41 +62,50 @@ nav {
 
 #post3 {
     grid-area: po3;
+    margin-bottom: 0em;
+}
+
+p {
+    margin-top: 1em;
+}
+
+.readMoreButton {
+    margin-bottom: 0.5em;
 }
 
 aside {
     grid-area: asi;
     background-color: #2980b9;
-    margin-bottom: 1em;
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
     border-left: 4px solid #2471a3;
     padding-left: 15px;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .asideObject {
-    margin-bottom: 1em;
+    margin-top: 0.5em;
 }
 
-.asideButton {
+.customButton {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     text-align: center;
     text-decoration: none;
     color: black;
-    background-color: blue;
+    background-color: #59abe1;
     border-radius: 5px;
     border: none;
 }
 
 #gridIndex {
-    background-color: rgba(41,128,185,0.8);
+    background-color: rgba(41, 128, 185, 0.8);
     display: grid;
     grid-template-columns: 70% 30%;
     height: auto;
     grid-template-areas:
-        'hed hed' 
+        'hed hed'
         'po1 asi'
         'po2 asi'
         'po3 asi'
