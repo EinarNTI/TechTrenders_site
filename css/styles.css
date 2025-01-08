@@ -129,3 +129,34 @@ footer {
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
 }
+
+section {
+    background-color: #2980b9;
+}
+
+.inputDescriptor {
+    margin-top: 1em;
+}
+
+#inputTitle {
+    background-color: #9fcae4;
+    appearance: none;
+    border: none;
+}
+
+#inputImage {
+
+    appearance: none;
+    border: none;
+}
+
+#inputText {
+    background-color: #9fcae4;
+    appearance: none;
+    border: none;
+}
+
+#submitButton {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
