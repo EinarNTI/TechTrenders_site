@@ -148,6 +148,7 @@ section {
 
     appearance: none;
     border: none;
+    padding-left: 2em;
 }
 
 #inputText {
@@ -159,4 +160,16 @@ section {
 #submitButton {
     margin-top: 1em;
     margin-bottom: 1.5em;
+}
+
+#descriptorSection {
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+#inputSection {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5em;
 }
