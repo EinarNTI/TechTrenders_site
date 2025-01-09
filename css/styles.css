@@ -173,3 +173,31 @@ section {
     align-items: center;
     padding-top: 0.5em;
 }
+
+.cardImg {
+    width: 200px;
+}
+
+#cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 170px;
+    padding-top: 1em;
+}
+
+#cardContainer>h1 {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.card {
+    background-color: blue;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    border-radius: 0.5em;
+    text-align: center;
+}
