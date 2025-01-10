@@ -2,8 +2,13 @@
     margin-top: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    margin-bottom: 0;
+    height: 100%;
+    margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
     font-family: sans-serif;
@@ -113,7 +118,7 @@ aside {
 #gridIndex {
     display: grid;
     grid-template-columns: 70% 30%;
-    height: auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
         'po1 asi'
         'po2 asi'
@@ -128,6 +133,7 @@ footer {
     margin-bottom: 0px;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
+    width: 100%;
 }
 
 section {
@@ -163,8 +169,11 @@ section {
 }
 
 #descriptorSection {
+    padding-top: 1em;
     padding-bottom: 1em;
     margin-bottom: 2em;
+    grid-area: dsc;
+    text-align: center;
 }
 
 #inputSection {
@@ -172,6 +181,18 @@ section {
     flex-direction: column;
     align-items: center;
     padding-top: 0.5em;
+    grid-area: inp;
+}
+
+#gridWriters {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        'con'
+        'con'
+        'con'
+        'foo';
 }
 
 .cardImg {
@@ -185,6 +206,8 @@ section {
     justify-content: center;
     gap: 10px 170px;
     padding-top: 1em;
+    padding-bottom: 1em;
+    grid-area: con;
 }
 
 #cardContainer>h1 {
@@ -193,11 +216,23 @@ section {
 }
 
 .card {
-    background-color: blue;
+    background-color: #1b327b;
     padding-left: 1.5em;
     padding-right: 1.5em;
     padding-bottom: 2em;
     padding-top: 1em;
     border-radius: 0.5em;
     text-align: center;
+    width: 250px;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);;
+}
+
+#gridNewPost {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        'dsc'
+        'inp'
+        'foo';
 }
